@@ -9,6 +9,7 @@ RUN apt-get update \
 WORKDIR /root/maltrail
 
 COPY run.sh /root/run.sh
+COPY maltrail.conf /root/maltrail/maltrail.conf
 
 ENTRYPOINT  ["/bin/bash", "/root/run.sh"]
 
